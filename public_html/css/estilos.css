@@ -76,14 +76,13 @@ body {
     background-size: cover 100%;
     background-repeat: no-repeat;
     overflow: scroll;
-    /*  -ms-animation: animacionFondo 25s linear infinite;
+    -ms-animation: animacionFondo 25s linear infinite;
         -moz-animation: animacionFondo 25s linear infinite;
-        -webkit-animation: animacionFondo 25s linear infinite; */
+        -webkit-animation: animacionFondo 25s linear infinite;
     -ms-animation: cambiarRutaFondo 25s linear infinite;
     -moz-animation: cambiarRutaFondo 25s linear infinite;
     -webkit-animation: cambiarRutaFondo 50s infinite;
 }
-
 
 a {
     font-family: "Roboto Slab", cursive;
@@ -92,6 +91,15 @@ a {
 /* Cambios colores fondo barras nav*/
 nav.navbar {
     background-color: #AB2848;
+}
+
+.footer {
+    background-color: #AB2848;
+    position: fixed;
+    bottom: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
 }
 
 .navbar-inverse .navbar-nav>li>a {
