@@ -16,7 +16,7 @@
     overflow: hidden;
 } */
 
-@keyframes animacionFondo {
+/* @keyframes animacionFondo {
     from {background-size: 100%;}
     to {background-size: 150%;}
 }
@@ -31,6 +31,35 @@
 @-moz-keyframes animacionFondo {
     from {background-size: 100%;}
     to {background-size: 150%;}
+} */
+
+@keyframes cambiarRutaFondo {
+    0% {background: url(https://image.tmdb.org/t/p/original/jmlMLYEsYY1kRc5qHIyTdxCeVmZ.jpg);}
+    25% {background: url(https://image.tmdb.org/t/p/original/lYDo1YikcXkgtUQsToBdDTGw3jV.jpg);}
+    50% {background: url(https://image.tmdb.org/t/p/original/7fXKVIM8UQBvQ9aQOzFqThlq7eN.jpg);}
+    75% {background: url(https://image.tmdb.org/t/p/original/tbhdm8UJAb4ViCTsulYFL3lxMCd.jpg);}
+    100% {background: url(https://image.tmdb.org/t/p/original/u3MpvNI4zWemXpLZBjhmbA2sSBC.jpg);}
+}   
+@-webkit-keyframes cambiarRutaFondo {
+    0% {background: url(https://image.tmdb.org/t/p/original/jmlMLYEsYY1kRc5qHIyTdxCeVmZ.jpg);}
+    25% {background: url(https://image.tmdb.org/t/p/original/lYDo1YikcXkgtUQsToBdDTGw3jV.jpg);}
+    50% {background: url(https://image.tmdb.org/t/p/original/7fXKVIM8UQBvQ9aQOzFqThlq7eN.jpg);}
+    75% {background: url(https://image.tmdb.org/t/p/original/tbhdm8UJAb4ViCTsulYFL3lxMCd.jpg);}
+    100% {background: url(https://image.tmdb.org/t/p/original/u3MpvNI4zWemXpLZBjhmbA2sSBC.jpg);}
+}
+@-ms-keyframes cambiarRutaFondo {
+    0% {background: url(https://image.tmdb.org/t/p/original/jmlMLYEsYY1kRc5qHIyTdxCeVmZ.jpg);}
+    25% {background: url(https://image.tmdb.org/t/p/original/lYDo1YikcXkgtUQsToBdDTGw3jV.jpg);}
+    50% {background: url(https://image.tmdb.org/t/p/original/7fXKVIM8UQBvQ9aQOzFqThlq7eN.jpg);}
+    75% {background: url(https://image.tmdb.org/t/p/original/tbhdm8UJAb4ViCTsulYFL3lxMCd.jpg);}
+    100% {background: url(https://image.tmdb.org/t/p/original/u3MpvNI4zWemXpLZBjhmbA2sSBC.jpg);}
+}
+@-moz-keyframes cambiarRutaFondo {
+    0% {background: url(https://image.tmdb.org/t/p/original/jmlMLYEsYY1kRc5qHIyTdxCeVmZ.jpg);}
+    25% {background: url(https://image.tmdb.org/t/p/original/lYDo1YikcXkgtUQsToBdDTGw3jV.jpg);}
+    50% {background: url(https://image.tmdb.org/t/p/original/7fXKVIM8UQBvQ9aQOzFqThlq7eN.jpg);}
+    75% {background: url(https://image.tmdb.org/t/p/original/tbhdm8UJAb4ViCTsulYFL3lxMCd.jpg);}
+    100% {background: url(https://image.tmdb.org/t/p/original/u3MpvNI4zWemXpLZBjhmbA2sSBC.jpg);}
 }
 
 body {
@@ -41,14 +70,18 @@ body {
     left: 0px;
     //background-image: url("https://image.tmdb.org/t/p/original/9mNklILambgAb1mUm8912yaSjar.jpg");
     background: url("https://image.tmdb.org/t/p/original/9mNklILambgAb1mUm8912yaSjar.jpg"), url("https://image.tmdb.org/t/p/original/iwSElAGNfhiva931Ywx4Ow6QLDA.jpg");
+    background-position: center;
+    background-attachment: fixed;
     background-color: #FFEAB5;
-    background-size: 100%;
-    background-position: center 0px;
+    background-size: cover 100%;
     background-repeat: no-repeat;
-    overflow: hidden;
-    -ms-animation: animacionFondo 25s linear infinite;
-    -moz-animation: animacionFondo 25s linear infinite;
-    -webkit-animation: animacionFondo 25s linear infinite;
+    overflow: scroll;
+    /*  -ms-animation: animacionFondo 25s linear infinite;
+        -moz-animation: animacionFondo 25s linear infinite;
+        -webkit-animation: animacionFondo 25s linear infinite; */
+    -ms-animation: cambiarRutaFondo 25s linear infinite;
+    -moz-animation: cambiarRutaFondo 25s linear infinite;
+    -webkit-animation: cambiarRutaFondo 50s infinite;
 }
 
 
@@ -89,3 +122,40 @@ nav.navbar {
     -moz-box-shadow: 0px 5px 5px rgba(36,36,36,1);
     box-shadow: 0px 5px 5px rgba(36,36,36,1);
 }
+
+@media (min-width: 768px) {
+    .caja-email {
+   position: relative;
+   top: 30%;
+   padding-top: 3%;
+   padding-bottom: 3%;
+   background: rgb(200, 54, 54);
+   background: rgba(0, 0, 0, 0.3);
+   text-align: center;
+   font-size: 2em;
+   color: #FFEAB5;
+   text-shadow: 1px 2px black;
+    }
+}
+
+@media (min-width: 1px) and (max-width: 767px) {
+    .caja-email {
+   position: relative;
+   top: 30%;
+   padding-top: 3%;
+   padding-bottom: 3%;
+   background: rgb(200, 54, 54);
+   background: rgba(0, 0, 0, 0.3);
+   text-align: center;
+   font-size: 1.2em;
+   color: #FFEAB5;
+   text-shadow: 1px 2px black;
+    }
+}
+
+img{
+    height: 100%;
+}
+
+
+
