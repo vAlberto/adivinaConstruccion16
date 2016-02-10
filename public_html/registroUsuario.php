@@ -7,10 +7,10 @@ include("negocio/usuario.php");
     
     //echo $retorno;
     
-    $host="localhost";  //mysql.hostinger.es localhost
-    $user="root";  //u755245033_admin root
-    $password=""; //admin1234
-    $db="concurso_cine"; //u755245033_cine concurso_cine
+    $host="mysql.hostinger.es";  //mysql.hostinger.es localhost
+    $user="u757224095_admin";  //u755245033_admin root
+    $password="admin1234"; //admin1234
+    $db="u757224095_cine"; //u757224095_cine concurso_cine
     $con=mysqli_connect($host,$user,$password,$db);
     
     // Check connection
