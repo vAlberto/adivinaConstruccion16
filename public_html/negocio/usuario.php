@@ -63,7 +63,7 @@
 		 public function __construct()
 		{
                     $this->idUsuario = 0;
-                    $this->haPagado = false;
+                    $this->haPagado = FALSE;
 		}
 		
 		/*----------------*/
@@ -74,7 +74,7 @@
 		
                 public function graba($con){
                     mysqli_query($con,"INSERT INTO usuarios (nick, email, password, haPagado) 
-                    VALUES ('', '".$this->email."','',".$this->haPagado.")");
+                    VALUES ('".$this->nick."', '".$this->email."','".$this->password."',".$this->haPagado.")");
 
                 }
 
