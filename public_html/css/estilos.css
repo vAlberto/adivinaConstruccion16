@@ -93,13 +93,21 @@ nav.navbar {
     background-color: #AB2848;
 }
 
-.footer {
+.pie {
     background-color: #AB2848;
     position: fixed;
     bottom: 0px;
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
+    width: 100%;
+    height: 51px;
+    -webkit-box-shadow: 0px 5px 5px rgba(36,36,36,1);
+    -moz-box-shadow: 0px 5px 5px rgba(36,36,36,1);
+    box-shadow: 0px 5px 5px rgba(36,36,36,1);
+}
+
+#caja-pie {
+    margin: 0 auto;
+    color: #FFEAB5;
+    text-shadow: 1px 2px black;
 }
 
 .navbar-inverse .navbar-nav>li>a {
