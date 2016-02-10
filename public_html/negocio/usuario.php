@@ -8,6 +8,7 @@
 		private $nick;
 		private $email;
 		private $password;
+                private $haPagado;
 		/*----------------*/
 		
 		/*--------------------------*/
@@ -29,6 +30,10 @@
 		{
 			$this->password = $value;
 		}
+                public function setHaPagado($value)
+		{
+			$this->haPagado = $value;
+		}
                 
 		public function getIdUsuario()
 		{
@@ -46,6 +51,10 @@
 		{
 			return $this->password;
 		}
+                public function getHaPagado()
+		{
+                    return $this->haPagado;
+                }
 		/*----------------*/
 		
 		/*--------------------------*/
@@ -53,7 +62,8 @@
 		/*--------------------------*/
 		 public function __construct()
 		{
-			$this->idUsuario = 0;
+                    $this->idUsuario = 0;
+                    $this->haPagado = false;
 		}
 		
 		/*----------------*/
@@ -63,8 +73,8 @@
 		/*--------------------------*/
 		
                 public function graba($con){
-                    mysqli_query($con,"INSERT INTO usuarios (nick, email, password) 
-                    VALUES ('', '".$this->email."','')");
+                    mysqli_query($con,"INSERT INTO usuarios (nick, email, password, haPagado) 
+                    VALUES ('', '".$this->email."','',".$this->haPagado.")");
 
                 }
 
@@ -82,6 +92,7 @@
                     {
                         $usuario->setIdUsuario($row['idUsuario']);
                         $usuario->setEmail($row['email']);
+                        $usuario->setHaPagado($row['haPagado']);
                     }
                     
                     return $usuario;
