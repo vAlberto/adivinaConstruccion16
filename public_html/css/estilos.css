@@ -157,7 +157,7 @@ nav.navbar {
     box-shadow: 0px 5px 5px rgba(36,36,36,1);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .caja-email {
    position: relative;
    top: 10%;
