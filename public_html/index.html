@@ -46,14 +46,14 @@
 
 <footer class="pie">
       <div class="container">
-          <div class="row">
-              <div class="col-lg-3 col-md-3 col-xs-1"></div>
-              <div class="col-lg-6 col-md-6 col-xs-10" id="caja-pie">
-                  <a href="http://www.facebook.com/adivinacuantos"><span class="fa fa-facebook-official fa-2x"></span> Facebook</a>
-                  <a href="http://www.twitter.com/adivinacuantos"><span class="fa fa-twitter-square fa-2x"></span> Twitter</a>
-                  <a href="#"><span class="fa fa-envelope fa-2x"></span> Dudas</a>
+          <div class="row" id="caja-pie">
+              <!-- <div class="col-lg-3 col-md-3 col-xs-1"></div> -->
+              <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
+                  <a class="enlaces" href="http://www.facebook.com/adivinacuantos" target="_blank"><span class="fa fa-facebook-official fa-2x"></span> FB</a>
+                  <a class="enlaces" href="http://www.twitter.com/adivinacuantos" target="_blank"><span class="fa fa-twitter-square fa-2x"></span> TW</a>
+                  <a class="enlaces" href="#" target="_blank"><span class="fa fa-google-plus-square fa-2x"></span> G+</a>
               </div>
-              <div class="col-lg-3 col-md-3 col-xs-1"></div>
+              <!-- <div class="col-lg-3 col-md-3 col-xs-1"></div> -->
           </div>
       </div>
 </footer>
@@ -65,16 +65,17 @@
 
                 
             <div class="caja-email">
-                <p>¿Sabes mucho de cine?</p>
-                <p>Demuéstralo.</p>
-                <p>Dejanos tu e-mail y te avisamos cuando esté listo el concurso.</p>
-                <br>
+                        <p>¿Sabes mucho de cine? Demuéstralo.</p>
+                        <p></p>
+                        <p>Dejanos tu e-mail y te avisamos cuando esté listo el concurso.<br>
+                            <img id="logo" src="media/img/Logo.png" alt="Logotipo">
+                        </p>
                 <div class="row">
                   <div class="col-lg-3 col-md-3 col-xs-1">
                   </div>
                   <div class="col-lg-6 col-md-6 col-xs-10">
                     <div class="input-group">
-                      <input type="text" name="email" id="txtEmail" class="form-control" placeholder="Introduce tu e-mail...">
+                      <input type="text" name="email" id="txtEmail" class="form-control" placeholder="Introduce tu e-mail..." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
                       <span class="input-group-btn">
                         <button class="btn btn-primary" type="button" onclick="enviarEmail()">
                             Enviar

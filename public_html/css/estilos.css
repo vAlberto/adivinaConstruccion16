@@ -68,20 +68,19 @@ body {
     height: 100%;
     top: 0px;
     left: 0px;
-    //background-image: url("https://image.tmdb.org/t/p/original/9mNklILambgAb1mUm8912yaSjar.jpg");
-    background: url("https://image.tmdb.org/t/p/original/9mNklILambgAb1mUm8912yaSjar.jpg"), url("https://image.tmdb.org/t/p/original/iwSElAGNfhiva931Ywx4Ow6QLDA.jpg");
+    background: url(https://image.tmdb.org/t/p/original/lYDo1YikcXkgtUQsToBdDTGw3jV.jpg);
     background-position: center;
     background-attachment: fixed;
     background-color: #FFEAB5;
-    background-size: cover 100%;
+    background-size: auto 100%;
     background-repeat: no-repeat;
     overflow: scroll;
-    -ms-animation: animacionFondo 25s linear infinite;
-        -moz-animation: animacionFondo 25s linear infinite;
-        -webkit-animation: animacionFondo 25s linear infinite;
+    /* -ms-animation: animacionFondo 25s linear infinite;
+    -moz-animation: animacionFondo 25s linear infinite;
+    -webkit-animation: animacionFondo 25s linear infinite;
     -ms-animation: cambiarRutaFondo 25s linear infinite;
     -moz-animation: cambiarRutaFondo 25s linear infinite;
-    -webkit-animation: cambiarRutaFondo 50s infinite;
+    -webkit-animation: cambiarRutaFondo 50s infinite; */
 }
 
 a {
@@ -106,8 +105,27 @@ nav.navbar {
 
 #caja-pie {
     margin: 0 auto;
+    padding-top: 9px;
     color: #FFEAB5;
     text-shadow: 1px 2px black;
+}
+
+.enlaces {
+    padding-left: 11px;
+    color: #FFEAB5;
+    text-shadow: 1px 2px black;
+    text-decoration: none;
+}
+.enlaces:visited{
+    color: #FFEAB5;
+    text-shadow: 1px 2px black;
+    text-decoration: none;
+}
+
+.enlaces:hover {
+    color: black;
+    text-shadow: none;
+    text-decoration: none;
 }
 
 .navbar-inverse .navbar-nav>li>a {
@@ -142,7 +160,7 @@ nav.navbar {
 @media (min-width: 768px) {
     .caja-email {
    position: relative;
-   top: 30%;
+   top: 10%;
    padding-top: 3%;
    padding-bottom: 3%;
    background: rgb(200, 54, 54);
@@ -152,12 +170,25 @@ nav.navbar {
    color: #FFEAB5;
    text-shadow: 1px 2px black;
     }
+    #logo {
+    padding-top: 7px;
+    padding-bottom: 0px;
+    width: 250px;
+    }
+    body {
+    -ms-animation: animacionFondo 25s linear infinite;
+    -moz-animation: animacionFondo 25s linear infinite;
+    -webkit-animation: animacionFondo 25s linear infinite;
+    -ms-animation: cambiarRutaFondo 25s linear infinite;
+    -moz-animation: cambiarRutaFondo 25s linear infinite;
+    -webkit-animation: cambiarRutaFondo 50s infinite;
+    }
 }
 
-@media (min-width: 1px) and (max-width: 767px) {
+@media (min-width: 500px) and (max-width: 767px) {
     .caja-email {
    position: relative;
-   top: 30%;
+   top: 20%;
    padding-top: 3%;
    padding-bottom: 3%;
    background: rgb(200, 54, 54);
@@ -166,6 +197,30 @@ nav.navbar {
    font-size: 1.2em;
    color: #FFEAB5;
    text-shadow: 1px 2px black;
+    }
+    #logo {
+    padding-top: 7px;
+    padding-bottom: 0px;
+    width: 150px;
+    }
+}
+
+@media (min-width: 1px) and (max-width: 499px) {
+    .caja-email {
+   position: relative;
+   padding-top: 3%;
+   padding-bottom: 3%;
+   background: rgb(200, 54, 54);
+   background: rgba(0, 0, 0, 0.3);
+   text-align: center;
+   font-size: 1em;
+   color: #FFEAB5;
+   text-shadow: 1px 2px black;
+    }
+    #logo {
+        padding-top: 7px;
+        padding-bottom: 0px;
+        width: 50px;
     }
 }
 
